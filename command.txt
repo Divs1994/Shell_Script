@@ -1,0 +1,627 @@
+    1  sudo yum update
+    2  clear
+    3  exit
+    4  lsblk
+    5  sudo file -s /dev/xvdf
+    6  lsblk
+    7  sudo mkdir /newvolume
+    8  ls
+    9  sudo mkdir /newvolume
+   10  sudo mkdir/newvolume
+   11  sudo mkdir old
+   12  ls
+   13  pwd
+   14  sudo mount /dev/xvdf /home/ec2-user/old/
+   15  clear
+   16  lsblk
+   17  sudo file -s /dev/xvdf
+   18  sudo mount /dev/xvdf /old
+   19  sudo mkdir /data
+   20  ls
+   21  sudo mount /dev/xvdf /data
+   22  sudo mount /dev/xvdf1 /data
+   23  ls
+   24  lsblk
+   25  cd /data
+   26  ls
+   27  cd home/
+   28  ls
+   29  cd ec2-user/
+   30  sudo cd ec2-user/
+   31  ls
+   32  sudo su
+   33  ls
+   34  cd ..
+   35  ls
+   36  cd ..
+   37  ls
+   38  cd $HOME
+   39  ls
+   40  cd old/
+   41  cd old
+   42  ls
+   43  clear
+   44  cd ..
+   45  lsblk
+   46  umount -d /dev/xvdf1 
+   47  umount -d /dev/xvdf1
+   48  sudo umount -d /dev/xvdf1
+   49  lsblk
+   50  exit
+   51  ls
+   52  cd old/
+   53  ls
+   54  mv bash.zip /home/ec2-user/
+   55  mv bash.zip /home/ec2-user
+   56  sudo mv bash.zip /home/ec2-user
+   57  ls
+   58  cd ..
+   59  ls
+   60  rm -r old
+   61  ls
+   62  unzip bash.zip 
+   63  ls
+   64  cat pwd.txt 
+   65  cd r
+   66  cat remote.txt 
+   67  ls
+   68  clear
+   69  ls
+   70  cd ec2-user/
+   71  ls
+   72  cd..
+   73  cd ..
+   74  sudo rm -r ec2-user
+   75  ls
+   76  sudo rm -r bash.zip 
+   77  ls
+   78  clear
+   79  ls
+   80  x=(1 5 8 7 9 6 "Shell" "Divakar"
+   81  x=(1 5 8 7 9 6 "Shell" "Divakar")
+   82  echo "${x[@]}"
+   83  echo "$x1
+   84  echo "$x1"
+   85  echo "$x2"
+   86  echo "$x1"
+   87  clear
+   88  echo "{x[*]}
+   89  echo "{x[*]}"
+   90  echo "${x[*]}"
+   91  echo "{$x[*]}"
+   92  echo "${x[*]}"
+   93  echo "${x[5]}"
+   94  echo "${x[8]}"
+   95  echo "${x[7]}"
+   96  echo "{$x[7]}"
+   97  echo "{$x[@]}"
+   98  echo "{$x[*]}"
+   99  echo "${x[*]}"
+  100  echo "${x[2-5]}"
+  101  echo "${x[2-*]}"
+  102  echo "${x[*]:4}"
+  103  echo "${x[*]:4-6}"
+  104  echo "${x[*]:4-7}"
+  105  echo "${#x[*]}"
+  106  echo "${#x[*]:6}"
+  107  echo "${#x[*]:5}"
+  108  echo "${#x[*]}"
+  109  echo "${x[*]}"
+  110  echo "${x[8]}"
+  111  echo "${x[7]}"
+  112  echo "${#x[7]}"
+  113  clear
+  114  echo "${x[@/*]}"
+  115  echo "${x[5]}"
+  116  echo "${x[@]}"
+  117  echo "${x[0]}"
+  118  read -a my_array
+  119  echo "${my_array[*]}
+  120  echo "${my_array[*]}"
+  121  echo "${my_array[]}"
+  122  echo "${my_array[3]}"
+  123  clear
+  124  exit
+  125  sudo yum udpate
+  126  sudo yum update
+  127  cleaar
+  128  clear
+  129  ls
+  130  ls -al
+  131  clear
+  132  cat /etc/passwd
+  133  cat /etc/passwd | awk '{print $2}'
+  134  cat /etc/passwd | awk '{print $1}'
+  135  cat /etc/passwd | awk -F ":" '{print $1}'
+  136  cat /etc/passwd | awk -F : '{print $1}'
+  137  clear
+  138  ls -al >test
+  139  ls
+  140  cat test
+  141  clear
+  142  awk '{print ok}' /etc/passwd
+  143  awk '{print "ok"}' /etc/passwd
+  144  clear
+  145  awk '{print $0}' /etc/passwd
+  146  awk '{print $1,$3}' /etc/passwd
+  147  awk '{ print $1,$3 }' /etc/passwd
+  148  awk -F : '{ print $1,$3 }' /etc/passwd
+  149  clear
+  150  awk -F : '{ print $1,$3,NR }' /etc/passwd
+  151  awk -F : '{ print NR,$1,$3 }' /etc/passwd
+  152  awk -F : '{ print NR }' /etc/passwd
+  153  awk -F : '{ print NR $0 }' /etc/passwd
+  154  awk -F : '{ print NR,,$0 }' /etc/passwd
+  155  awk -F : '{ print NR,$0 }' /etc/passwd
+  156  clear
+  157  awk -F : '{ print NF,$0 }' /etc/passwd
+  158  awk '{ print NF,$0 }' /etc/passwd
+  159  clear
+  160  awk '{ print NF,NR }' /etc/passwd
+  161  awk '{ print NR,NF }' /etc/passwd
+  162  awk -F : '{ print NR,NF }' /etc/passwd
+  163  clear
+  164  awk -F : '{ print NR,NF }' /etc/passwd
+  165  awk -F : '{ print $NR,$NF }' /etc/passwd
+  166  awk -F : '{ print $NF }' /etc/passwd
+  167  awk -F : '{ print $0 }' /etc/passwd
+  168  clear
+  169  pwd | awk -F / '{ print $2 }'
+  170  pwd | awk -F / '{ print $1 }'
+  171  pwd | awk -F / '{ print $4 }'
+  172  pwd | awk -F / '{ print $3 }'
+  173  pwd | awk -F - '{ print $3 }'
+  174  pwd | awk -F - '{ print $1 }'
+  175  pwd | awk -F - '{ print $2 }'
+  176  pwd | awk -v x=9 '{ print $2 x }'
+  177  pwd | awk -v x=9 '{ print $0 x }'
+  178  cat /etc/passwd
+  179  awk '{ $0 }'
+  180  awk '{ $0 }' /etc/passwd
+  181  awk '{ print $0 }' /etc/passwd
+  182  awk 'NR>3 { print $0 }' /etc/passwd
+  183  clear
+  184  mkdir awk
+  185  cd awk/
+  186  ls
+  187  awk 'BEGIN {print "Hello World"}
+  188  awk 'BEGIN {print "Hello World"}'
+  189  which awk
+  190  which
+  191  which awk
+  192  clear
+  193  ls
+  194  vim awk.awk
+  195  awk -f awk.awk 
+  196  cat
+  197  cat awk.awk 
+  198  vim awk.awk 
+  199  awk awk.awk 
+  200  a
+  201  chmod +x awk.awk 
+  202  ./awk.awk 
+  203  awk -f awk.awk 
+  204  cd ..
+  205  which awk
+  206  cd awk/
+  207  ls
+  208  clear
+  209  awk 'BEGIN {}'
+  210  awk 'BEGIN { print "Divakar" }'
+  211  awk 'BEGIN { a=5 }'
+  212  echo $a
+  213  awk 'BEGIN { a=5 print a}'
+  214  awk 'BEGIN { a=5,print a}'
+  215  awk 'BEGIN { a=5 : print a}'
+  216  awk 'BEGIN { a=5 : print a }'
+  217  clear
+  218  awk 'BEGIN { a=5 ; print a }
+  219  awk 'BEGIN { a=5 ; print a }'
+  220  5
+  221  vim simple.awk
+  222  awk -f simple.awk 
+  223  vim simple.awk 
+  224  awk -f simple.awk 
+  225  vim simple.awk 
+  226  awk -f simple.awk 
+  227  vim simple.awk 
+  228  awk -f simple.awk 
+  229  clear
+  230  vi display_a_b.awk
+  231  vim ab.txt
+  232  cat display_a_b.awk 
+  233  awk -f display_a_b.awk ab.txt 
+  234  awk -f NR=3 display_a_b.awk ab.txt 
+  235  awk -f display_a_b.awk ab.txt 
+  236  vi display_a_b.awk
+  237  awk -f display_a_b.awk ab.txt 
+  238  clear
+  239  ls
+  240  awk 'BEGIN { print "hi" }
+  241  awk 'BEGIN { print "hi" }'
+  242  history
+  243  history | awk echo { print $0 }
+  244  history | awk 'echo { print $0 }'
+  245  clear
+  246  bc
+  247  clear
+  248  vim cal.sh
+  249  chmod +x cal.sh 
+  250  ./cal.sh 
+  251  vim cal.sh
+  252  ./cal.sh 
+  253  vim cal.sh
+  254  ./cal.sh 
+  255  vim cal.sh
+  256  ./cal.sh 
+  257  vim cal.sh
+  258  ./cal.sh 
+  259  vim cal.sh
+  260  ./cal.sh 
+  261  vim cal.sh
+  262  ./cal.sh 
+  263  clear
+  264  vim cal.sh
+  265  ./cal.sh 
+  266  vim cal.sh
+  267  exit
+  268  sudo yum update
+  269  clear
+  270  sed
+  271  sed --version
+  272  clead
+  273  ls
+  274  sed pwd.txt 
+  275  sed '' pwd.txt 
+  276  sed 'p' pwd.txt 
+  277  clear
+  278  ls
+  279  cat test
+  280  clear
+  281  num cat test
+  282  cat -n test
+  283  clear
+  284  sed -n '5p'
+  285  sed -n '5p' test
+  286  sed -n '5-$p' test
+  287  sed -n '5-$'
+  288  sed -n '5-$' test
+  289  sed -n '5-16p' test
+  290  sed -n '5p-16p' test
+  291  sed -n '16p' test
+  292  sed -n '5,16p' test
+  293  sed -n '7,+18p' test
+  294  sed -n '7~18p' test
+  295  clear
+  296  sed -n '7~18p' test
+  297  sed -n '17~18p' test
+  298  clear
+  299  ls
+  300  ckear
+  301  clear
+  302  wget --version
+  303  curl --version
+  304  clear
+  305  wget https://mirrors.edge.kernel.org/pub/software/scm/git/
+  306  ls
+  307  cat index.html 
+  308  clear
+  309  vim script_for_git_version.sh
+  310  ls
+  311  chmod +x script_for_git_version.sh 
+  312  ls
+  313  clear
+  314  which wget
+  315  which wget 1>/dev/null
+  316  which wget 2>/dev/null
+  317  clear
+  318  cat script_for_git_version.sh 
+  319  vim script_for_git_version.sh 
+  320  sh script_for_git_version.sh 
+  321  clear
+  322  vim script_for_git_version.sh 
+  323  sh script_for_git_version.sh 
+  324  vim script_for_git_version.sh 
+  325  sh script_for_git_version.sh 
+  326  vim script_for_git_version.sh 
+  327  sh script_for_git_version.sh 
+  328  vim script_for_git_version.sh 
+  329  sh script_for_git_version.sh 
+  330  vim script_for_git_version.sh 
+  331  sh script_for_git_version.sh 
+  332  vim script_for_git_version.sh 
+  333  sh script_for_git_version.sh 
+  334  vim script_for_git_version.sh 
+  335  sh script_for_git_version.sh 
+  336  vim script_for_git_version.sh 
+  337  sh script_for_git_version.sh 
+  338  clear
+  339  vim script_for_git_version.sh 
+  340  sh script_for_git_version.sh 
+  341  vim script_for_git_version.sh 
+  342  sh script_for_git_version.sh 
+  343  vim script_for_git_version.sh 
+  344  clear
+  345  sh script_for_git_version.sh 
+  346  clear
+  347  vim script_for_git_version.sh 
+  348  sh script_for_git_version.sh 
+  349  vim script_for_git_version.sh 
+  350  sh script_for_git_version.sh 
+  351  vim script_for_git_version.sh 
+  352  sh script_for_git_version.sh 
+  353  vim script_for_git_version.sh 
+  354  sh script_for_git_version.sh 
+  355  vim script_for_git_version.sh 
+  356  sh script_for_git_version.sh 
+  357  vim script_for_git_version.sh 
+  358  sh script_for_git_version.sh 
+  359  vim script_for_git_version.sh 
+  360  sh script_for_git_version.sh 
+  361  clear
+  362  vim script_for_git_version.sh 
+  363  echo $line | sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'
+  364  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html 
+  365  cleat
+  366  clear
+  367  cat index.html 
+  368  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html 
+  369  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html | awk -F '"' '{ print $2 }'
+  370  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html | awk -F '"' '{ print $2 }' | cut -c 4-
+  371  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html | awk -F '"' '{ print $2 }' | cut -c 5-
+  372  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html | awk -F '"' '{ print $2 }' | cut -c 5- | awk -F '.tar.gz' { print $1 }
+  373  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html | awk -F '"' '{ print $2 }' | cut -c 5- | awk -F '.tar.gz' '{ print $1 }'\
+  374  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p' index.html | awk -F '"' '{ print $2 }' | cut -c 5- | awk -F '.tar.gz' '{ print $1 }'
+  375  clear
+  376  git=($(echo $line | sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'|awk -F '"' '{ print $2 }'|cut -c 5- | awk -F '.tar.gz' '{ print $1 }'))
+  377  $git
+  378  git=($(sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'|awk -F '"' '{ print $2 }'|cut -c 5- | awk -F '.tar.gz' '{ print $1 }' index.html))
+  379  git=($(sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'|awk -F '"' '{ print $2 }'|cut -c 5- | awk -F '.tar.gz' '{ print $1 }' )) index.html
+  380  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'|awk -F '"' '{ print $2 }'|cut -c 5- | awk -F '.tar.gz' '{ print $1 }' index.html
+  381  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'|awk -F '"' '{ print $2 }'|cut -c 5- | awk -F '.tar.gz' '{ print $1 }' index.html >> bad
+  382  sed -n '/git-\([0-9]\+\.\)\+tar.gz/p'|awk -F '"' '{ print $2 }'|cut -c 5- | awk -F '.tar.gz' '{ print $1 }' index.html > bad
+  383  ls
+  384  cat bad 
+  385  clear
+  386  echo -e "\t\t ${git_vers[cnt]} \\t ${git_vers[$((cnt+1))]} \\t ${git_vers[$((cnt+2))]}" bad
+  387  printf "%-*s %-*s %-*s %-*s %-*s\n" 15 bad
+  388  cat bad | printf "%-*s\n" 15
+  389  sudo yum update
+  390  clear
+  391  ls
+  392  clear
+  393  vim clock.sh
+  394  chmod +x c
+  395  chmod +x clock.sh 
+  396  sh c
+  397  sh clock.sh 
+  398  vim clock.sh
+  399  sh clock.sh 
+  400  vim clock.sh
+  401  sh clock.sh 
+  402  date
+  403  date '+%T'
+  404  date '+%D'
+  405  date '+%T'
+  406  date '+%T' '%H'
+  407  date '+%T'
+  408  vim clock.sh 
+  409  date '+%T'
+  410  sh clock.sh 
+  411  vim clock.sh 
+  412  sh clock.sh 
+  413  vim clock.sh 
+  414  sh clock.sh 
+  415  vim clock.sh 
+  416  sh clock.sh 
+  417  lear
+  418  clear
+  419  sh clock.sh 
+  420  clear
+  421  vim clock.sh 
+  422  sh clock.sh 
+  423  vim clock.sh 
+  424  sh clock.sh 
+  425  vim clock.sh 
+  426  sh clock.sh 
+  427  vim clock.sh 
+  428  sh clock.sh 
+  429  vim clock.sh 
+  430  sh clock.sh 
+  431  vim clock.sh 
+  432  sh clock.sh 
+  433  vim clock.sh 
+  434  sh clock.sh 
+  435  vim clock.sh 
+  436  sh clock.sh 
+  437  vim clock.sh 
+  438  sh clock.sh 
+  439  clear
+  440  uname
+  441  uname -n
+  442  uname 
+  443  uname
+  444  clear
+  445  ipconfig
+  446  config
+  447  ip
+  448  ipconfig
+  449  ifconfig
+  450  clear
+  451  ifconfig
+  452  ifconfig | grep inet
+  453  ifconfig | grep inet | awk "NR==1" { print $2 }
+  454  ifconfig | grep inet | awk NR==1 { print $2 }
+  455  ifconfig | grep inet | awk 'NR==1 { print $2 }'
+  456  uptime
+  457  uptime | awk { print $3 }
+  458  uptime | awk -F ',' { print $3 }
+  459  uptime | awk -F ',' { print $2 }
+  460  uptime
+  461  uptime | awk
+  462  uptime | awk { print $1 }
+  463  uptime | awk {print $1}
+  464  uptime | awk '{ print $1 }'
+  465  uptime | awk -F ',' '{ print $1 }'
+  466  uptime
+  467  uptime | awk '{ print $3 }'
+  468  clear
+  469  vim Automate_Server_Inventory.sh
+  470  uname -u
+  471  uname -n
+  472  vim awk/
+  473  vim Automate_Server_Inventory.sh 
+  474  chmod +x Automate_Server_Inventory.sh 
+  475  sh Automate_Server_Inventory.sh 
+  476  uname -n
+  477  uname-m
+  478  uname-n
+  479  vim Automate_Server_Inventory.sh 
+  480  sh Automate_Server_Inventory.sh 
+  481  vim Automate_Server_Inventory.sh 
+  482  sh Automate_Server_Inventory.sh 
+  483  clear
+  484  vim Automate_Server_Inventory.sh 
+  485  clear
+  486  sh Automate_Server_Inventory.sh 
+  487  vim Automate_Server_Inventory.sh 
+  488  sh Automate_Server_Inventory.sh 
+  489  vim Automate_Server_Inventory.sh 
+  490  sh Automate_Server_Inventory.sh 
+  491  vim Automate_Server_Inventory.sh 
+  492  sh Automate_Server_Inventory.sh 
+  493  ls
+  494  cat Inventory.csv 
+  495  clear
+  496  ls -ltr
+  497  clear
+  498  ssh-keygen
+  499  ls
+  500  cd .ssh/
+  501  ls
+  502  cd ..
+  503  rm -rf .ssh
+  504  clear
+  505  ssh-keygen
+  506  clear
+  507  cd .ssh/
+  508  ls
+  509  ssh man
+  510  man ssh
+  511  ssh-copy-id divakar@15.207.110.174
+  512  ssh divakar@15.207.110.174
+  513  cd /
+  514  ls
+  515  cd home/
+  516  ls
+  517  cd ec2-user/
+  518  ls
+  519  tput cols
+  520  printf "#%0.s" $(seq 1(tput cols))
+  521  printf "#%0.s" 
+  522  clear
+  523  printf #
+  524  printf "#"
+  525  printf $(seq 1(tput cols))
+  526  $(seq 1(tput cols))
+  527  seq 1(tput cols)
+  528  seq 1tput cols
+  529  seq 1 tput cols
+  530  seq --help
+  531  man seq
+  532  clear
+  533  vim multiple_server.sh
+  534  chmod +x multiple_server.sh 
+  535  sh multiple_server.sh 
+  536  vim multiple_server.sh 
+  537  sh multiple_server.sh 
+  538  vim multiple_server.sh 
+  539  clear
+  540  sh multiple_server.sh 
+  541  vim multiple_server.sh 
+  542  sh multiple_server.sh 
+  543  vim multiple_server.sh 
+  544  sh multiple_server.sh 
+  545  vim multiple_server.sh 
+  546  sh multiple_server.sh 
+  547  vim multiple_server.sh 
+  548  sh multiple_server.sh 
+  549  vim multiple_server.sh 
+  550  sh multiple_server.sh 
+  551  vim multiple_server.sh 
+  552  sh multiple_server.sh 
+  553  vim multiple_server.sh 
+  554  sh multiple_server.sh 
+  555  vim multiple_server.sh 
+  556  sh multiple_server.sh 
+  557  clear
+  558  sh multiple_server.sh 
+  559  vim multiple_server.sh 
+  560  sh multiple_server.sh 
+  561  vim multiple_server.sh 
+  562  sh multiple_server.sh 
+  563  vim multiple_server.sh 
+  564  sh multiple_server.sh 
+  565  vim multiple_server.sh 
+  566  sh multiple_server.sh 
+  567  vim multiple_server.sh 
+  568  sh multiple_server.sh 
+  569  vim multiple_server.sh 
+  570  sh multiple_server.sh 
+  571  vim multiple_server.sh 
+  572  sh multiple_server.sh 
+  573  vim multiple_server.sh 
+  574  sh multiple_server.sh 
+  575  clear
+  576  vim multiple_server.sh 
+  577  git --version
+  578  sudo yum install git
+  579  clear
+  580  git --version
+  581  git config –global user.name "divs199"
+  582  git config –global user.name "divs1994"
+  583  git config –global user.name "Divs1994"
+  584  git config –global user.email "divs18071994@gmail.com"
+  585  git config
+  586  git config --global user.name "Divs1994"
+  587  git config --global user.email "divs18071994@gmail.com"
+  588  mkdir Shell_Script
+  589  cd Shell_Script/
+  590  gitinit
+  591  git init
+  592  git remote add origin https://github.com/Divs1994/Shell_Script.git
+  593  cd ..
+  594  ls
+  595  mv /home/ec2-user/ /home/ec2-user/Shell_Script/
+  596  mv /home/ec2-user/* /home/ec2-user/Shell_Script/
+  597  mv *
+  598  mv /home/ec2-user/* 
+  599  ls
+  600  cd ..
+  601  ls
+  602  \cd home/
+  603  ls
+  604  cd ec2-user/
+  605  ls
+  606  cd Shell_Script/
+  607  ls
+  608  rm -rf yamllint-1.24.2
+  609  ls
+  610  ls -ltr
+  611  git add *
+  612  git commit -m "First"
+  613  git push origin master
+  614  ls
+  615  clear
+  616  vim multiple_server.sh 
+  617  clear
+  618  cd ..
+  619  ssh -i divakar@15.207.110.174
+  620  ssh divakar@15.207.110.174
+  621  exit
+  622  ls
+  623  cd Shell_Script/
+  624  ls
+  625  history
+  626  clear
+  627  history > command.txt
